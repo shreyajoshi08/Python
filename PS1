@@ -1,1 +1,22 @@
 print("Hello")
+
+# Write a program to prompt the user for temperature in Celsius, convert 
+# the temperature to Fahrenheit, and print temperature in Fahrenheit. 
+temp = int(input("Input the temperature in Celsius: "))
+temp_in_f = (temp*(9/5))+32
+print(round(temp_in_f))
+ 
+******************************************************************************************************************************************************************* 
+  
+# Modify exercise 1 to print a message when F > 90 and F < 32
+temp = int(input("Input the temperature in Celsius: "))
+temp_in_f = (temp*(9/5))+32
+if temp_in_f >90:
+    print('F>90')
+elif temp_in_f<32:
+    print('F<32')
+else:
+    print(round(temp_in_f))
+    
+*******************************************************************************************************************************************************************
+
