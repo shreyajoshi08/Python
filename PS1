@@ -18,3 +18,19 @@ else:
     
 *******************************************************************************************************************************************************************
 
+# Write a function to calculate the solution to a quadratic equation
+# https://www.mathsisfun.com/algebra/quadratic-equation.html
+# Prompt the user to the coefficients a, b, and c. 
+import math
+a= float(input("Enter coeff of x^2:"))
+b= float(input("Enter coeff of x:"))
+c= float(input("Enter constant:"))
+
+root = math.sqrt((b*b)-4*a*c)
+solution1 = (-b+(root))/2*a
+solution2 = (-b-(root))/2*a
+print (solution1)
+print (solution2)    
+
+*******************************************************************************************************************************************************************
+
