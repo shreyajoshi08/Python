@@ -34,3 +34,15 @@ print (solution2)
 
 *******************************************************************************************************************************************************************
 
+# Exercise 1
+def is_palindrome(input_string):
+    # Complete this function to determine if the input_string is a palindrome. Return True or False
+    # Use square brackets to reverse the input_string! Make sure to lower the input string before testing!
+    
+    # YOUR CODE HERE
+    pali = input_string.lower()
+    rev_pali = pali[::-1]
+    if pali == rev_pali:
+        return True
+    else:
+        return False
