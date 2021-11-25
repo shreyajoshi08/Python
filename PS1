@@ -46,3 +46,44 @@ def is_palindrome(input_string):
         return True
     else:
         return False
+        
+*******************************************************************************************************************************************************************
+
+# Exercise 2: Season from Month and Day
+def determine_season(month, day):
+   # The year is divided into four season: spring, summer, fall (or autumn) and winter.
+   # While the exact dates that the seasons change vary a little bit from year to
+   # year because of the way that the calender is constructed, we will use the following
+   # dates for this exercise:
+   # Season  -- First Day
+   # Spring  -- March 20
+   # Summer  -- June 21
+   # Fall  -- September 22
+   # Winter    -- December 21
+   # Complete this function which takes in as inputs a month and day. It should
+   # output the season.
+   # input 1: month -- str
+   # input 2: day -- int
+   # output: month -- str (Spring, Summer, Fall, Winter)
+   # YOUR CODE HERE:
+   
+   if month in ('January', 'February', 'March'):
+       season = 'Winter'
+   elif month in ('April', 'May', 'June'):
+       season = 'Spring'
+   elif month in ('July', 'August', 'September'):
+       season = 'Summer'
+   else:
+       season = 'Fall'
+
+   if (month == 'March') and (day > 19):
+       season = 'Spring'
+   elif (month == 'June') and (day > 20):
+       season = 'Summer'
+   elif (month == 'September') and (day > 21):
+       season = 'Fall'
+   elif (month == 'December') and (day > 20):
+       season = 'Winter'
+
+   return season
+   return("Winter")
