@@ -5,7 +5,7 @@ temp_in_f = (temp*(9/5))+32
 print(round(temp_in_f))
  
 ******************************************************************************************************************************************************************* 
-  
+
 # Modify exercise 1 to print a message when F > 90 and F < 32
 temp = int(input("Input the temperature in Celsius: "))
 temp_in_f = (temp*(9/5))+32
